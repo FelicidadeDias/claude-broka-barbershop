@@ -1548,6 +1548,39 @@ footer{
   letter-spacing:1px;
   text-transform:uppercase;
 }
+.membership-benefits{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin-top:24px;
+}
+.membership-benefit{
+  padding:27px 24px;
+  min-height:205px;
+  background:rgba(10,10,10,.78);
+  border:1px solid rgba(201,164,92,.32);
+  box-shadow:0 14px 35px rgba(0,0,0,.22);
+}
+.membership-benefit-number{
+  display:inline-block;
+  color:var(--gold-light);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:3px;
+  margin-bottom:18px;
+}
+.membership-benefit h3{
+  color:#fff;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:29px;
+  letter-spacing:.5px;
+  margin-bottom:10px;
+}
+.membership-benefit p{
+  color:#c8c8c8;
+  font-size:11px;
+  line-height:1.8;
+}
 .membership-action{
   display:flex;
   justify-content:center;
@@ -1565,6 +1598,8 @@ footer{
 @media(max-width:850px){
   .memberships{padding:88px 0}
   .membership-grid{grid-template-columns:1fr;max-width:520px;margin:auto;gap:14px}
+  .membership-benefits{grid-template-columns:1fr;max-width:520px;margin:22px auto 0}
+  .membership-benefit{min-height:0;padding:24px}
   .membership-card{min-height:0;padding:28px 24px}
   .memberships-heading{margin-bottom:35px}
   .memberships:before{background-size:min(460px,92vw);opacity:.10}
@@ -2371,13 +2406,13 @@ Cabelos longos
 <div class="section-label">Claude Broka • Clube de Clientes</div>
 
 <h2 class="memberships-title">
-O teu estilo merece<br><span>continuidade.</span>
+Escolha o plano ideal<br><span>para o seu estilo.</span>
 </h2>
 
 <p class="memberships-intro">
-Descobre os nossos planos de assinatura e mantém o teu visual sempre cuidado.
-Fala connosco para conhecer as opções disponíveis e encontrar o plano certo
-para a tua rotina.
+Escolha uma modalidade de assinatura de acordo com a sua rotina.
+Conheça as vantagens relacionadas com a frequência dos cortes,
+a compra de produtos e os benefícios reservados aos clientes inscritos.
 </p>
 
 </div>
@@ -2414,6 +2449,26 @@ e as vantagens disponíveis na Claude Broka Barbershop.
 <div class="membership-note">Condições sob consulta</div>
 </article>
 
+</div>
+
+<div class="membership-benefits">
+  <article class="membership-benefit">
+    <span class="membership-benefit-number">01</span>
+    <h3>Frequência de cortes</h3>
+    <p>Opções pensadas para acompanhar a regularidade das suas visitas e ajudar a manter o visual sempre cuidado. Os benefícios dependem do plano escolhido.</p>
+  </article>
+
+  <article class="membership-benefit">
+    <span class="membership-benefit-number">02</span>
+    <h3>Descontos exclusivos</h3>
+    <p>Vantagens especiais na compra de produtos disponíveis na barbearia, de acordo com as condições de cada assinatura.</p>
+  </article>
+
+  <article class="membership-benefit">
+    <span class="membership-benefit-number">03</span>
+    <h3>Exclusividade</h3>
+    <p>Benefícios e condições especiais reservados aos clientes inscritos no clube de clientes Claude Broka.</p>
+  </article>
 </div>
 
 <div class="membership-action">
